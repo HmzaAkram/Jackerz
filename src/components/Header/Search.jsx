@@ -16,11 +16,11 @@ const Navbar = () => {
               All Products
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link aria-label="Collection" className="link-hover" to="/collection">
               Collection
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link aria-label="Login" className="link-hover" to="/login">
               Login
