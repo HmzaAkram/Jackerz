@@ -5,19 +5,19 @@ import "./collection.css";
 const Collection = ({ collectionData, addToCart }) => {
   return (
     <>
-      <h1 className="page-header">Collection's</h1>
+      <h1 className="page-header">Collection</h1>
       <div className="container grid3">
-        {collectionData.map((collection, index) => {
+        {collectionData.map((product, index) => {
           return (
             <div className="box" key={index}>
-              <div className="collection mtop">
+              <div className="product mtop">
                 <div className="img">
-                  <span className="discount">{collection.discount}% Off</span>
-                  <img src={collection.img} alt="collection-image" />
+                  <span className="discount">{product.discount}% Off</span>
+                  <img src={product.img} alt="product-image" />
                 </div>
-                <div className="collection-details">
-                  <h3>{collection.name}</h3>
-                  <Link to={`/all-collections/${collection.id}`}>
+                <div className="product-details">
+                  <h3>{product.name}</h3>
+                  <Link to={`/all-products/${product.id}`}>
                     <h5>Click here for more Info</h5>
                   </Link>
                   <div className="rate">
@@ -28,10 +28,10 @@ const Collection = ({ collectionData, addToCart }) => {
                     <i className="fa fa-star"></i>
                   </div>
                   <div className="price">
-                    <h4>{collection.price}.00</h4>
+                    <h4>{product.price}.00</h4>
                     <button
                       aria-label="Add to cart"
-                      onClick={() => addToCart(collection)}
+                      onClick={() => addToCart(product)}
                     >
                       <i className="fa fa-plus"></i>
                     </button>

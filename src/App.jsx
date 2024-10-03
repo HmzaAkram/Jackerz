@@ -3,6 +3,8 @@ import AllRoutes from "./allroutes/AllRoutes";
 import FlashDealsData from "./components/FlashDeals/flashDealsData";
 import ShopData from "./components/Shop/shopData";
 import AllProductsData from "./components/Allproducts/allProductsData";
+//import Collectionpage from "./pages/collection/Collectionpage";
+//import Collection from "./components/Collection/collectionData";
 import toast, { Toaster } from "react-hot-toast";
 import "./App.css";
 
@@ -118,6 +120,7 @@ function App() {
         deleteFromCart={deleteFromCart}
         checkOut={checkOut}
         allProductsData={allProductsData}
+        collectionData={allProductsData}
         
       />
     </>

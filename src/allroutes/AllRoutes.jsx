@@ -5,7 +5,7 @@ import Homepage from "../pages/homepage/Homepage";
 import Loginpage from "../pages/loginpage/Loginpage";
 import Registrationpage from "../pages/registrationpage/Registrationpage";
 import Allproductspage from "../pages/all-productspage/Allproductspage";
-//import Collectionpage from "../pages/collection/Collectionpage";
+import Collectionpage from "../pages/collection/Collectionpage";
 import Singleproductpage from "../pages/product-details/Singleproductpage";
 import ErrorNotFound from "../components/ErrorNotFoundPage/ErrorNotFound";
 import ScrollToTop from "../components/ScrollToTop";
@@ -19,6 +19,7 @@ const AllRoutes = ({
   checkOut,
   removeFromCart,
   allProductsData,
+  collectionData,
   //collectionData, // Added collectionData here
 }) => {
   return (
@@ -75,7 +76,7 @@ const AllRoutes = ({
               />
             }
           />
-          {/* <Route
+          <Route
             path="/collection"
             element={
               <Collectionpage
@@ -84,8 +85,8 @@ const AllRoutes = ({
                 addToCart={addToCart}
               />
             }
-          /> */}
-          {/* <Route
+          />
+          <Route
             path="/collection/:id"
             element={
               <Singleproductpage
@@ -94,7 +95,7 @@ const AllRoutes = ({
                 addToCart={addToCart}
               />
             }
-          /> */}
+          />
           {/* Catch-all route for 404 errors */}
           <Route path="*" element={<ErrorNotFound cartItems={cartItems} />} />
         </Routes>
