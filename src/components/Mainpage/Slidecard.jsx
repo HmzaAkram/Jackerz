@@ -9,7 +9,7 @@ const Slidecard = () => {
 
   const handleButtonClick = () => {
     // Redirect the user to the desired page
-    navigate("/all-products"); // Replace '/collections' with the actual path
+    navigate("/collection"); // Replace '/collections' with the actual path
   };
 
   const settings = {

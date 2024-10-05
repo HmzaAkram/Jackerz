@@ -4,7 +4,7 @@ import FlashDealsData from "./components/FlashDeals/flashDealsData";
 import ShopData from "./components/Shop/shopData";
 import AllProductsData from "./components/Allproducts/allProductsData";
 //import Collectionpage from "./pages/collection/Collectionpage";
-//import Collection from "./components/Collection/collectionData";
+import CollectionData from "./components/Collection/collectionData";
 import toast, { Toaster } from "react-hot-toast";
 import "./App.css";
 
@@ -13,6 +13,7 @@ function App() {
   const { productItems } = FlashDealsData;
   const { shopItems } = ShopData;
   const { allProductsData } = AllProductsData;
+  const { collectionData } = CollectionData
   // using useState hooks to change and store items in  the cart here
   const [cartItems, setCartItems] = useState([]);
   // This is a function to add items in the cart it takes the product and checks within the cart to see if there's already added in cart
@@ -120,8 +121,8 @@ function App() {
         deleteFromCart={deleteFromCart}
         checkOut={checkOut}
         allProductsData={allProductsData}
-        collectionData={allProductsData}
-        
+        //collectionData={allProductsData}
+        collectionData={collectionData}
       />
     </>
   );
