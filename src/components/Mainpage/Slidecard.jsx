@@ -8,8 +8,8 @@ const Slidecard = () => {
   const navigate = useNavigate();
 
   const handleButtonClick = () => {
-    // Redirect the user to the desired page
-    navigate("/collection"); // Replace '/collections' with the actual path
+    // Redirect the user to the collections page
+    navigate("/collection"); // Replace '/collection' with the actual path if needed
   };
 
   const settings = {
@@ -19,10 +19,8 @@ const Slidecard = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    // appendDots: (dots) => {
-    //   return <ul style={{ margin: "0px" }}>{dots}</ul>;
-    // },
   };
+
   return (
     <>
       <Slider {...settings}>
@@ -35,7 +33,7 @@ const Slidecard = () => {
                 <button
                   onClick={handleButtonClick}
                   className="btn-primary"
-                  aria-hidden="false"
+                  aria-label={`Visit ${value.title} Collections`}
                 >
                   Visit Collections
                 </button>
@@ -43,8 +41,8 @@ const Slidecard = () => {
               <div className="right">
                 <img
                   src={value.cover}
-                  alt="slider-image"
-                  fetchpriority="high"
+                  alt={`${value.title} slider`}
+                  loading="lazy" /* Optimizing image loading */
                 />
               </div>
             </div>
