@@ -3,7 +3,7 @@ const allProductsData = {
     {
       id: 1,
       discount: 50,
-      img: "/assets/flash-deals/1/1.jpg",
+      img: "/assets/flash-deals/1/1.png",
       name: "Shoes",
       price: 100,
       desc: "fjackets Cafe Racer Leather Jacket Men - Real Lambskin Natural Grain Leather Motorcycle Jackets For Mens",
