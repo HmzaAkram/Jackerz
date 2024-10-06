@@ -3,14 +3,14 @@ const flashDealsData = {
     {
       id: 1,
       discount: 50,
-      img: "./assets/flash-deals/flash-1.png",
-      name: "Black Shoes",
-      price: 100,
+      img: "./assets/flash-deals/1/1.jpg",
+      name: "Austin Brown",
+      price: "150",
     },
     {
       id: 2,
       discount: 40,
-      img: "./assets/flash-deals/flash-2.png",
+      img: "./assets/flash-deals/2/1.jpg",
       name: "Digital Watch",
       price: 20,
     },

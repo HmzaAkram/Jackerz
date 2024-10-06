@@ -77,38 +77,43 @@ const Flashcard = ({ productItems, addToCart }) => {
           // mapping throught the array of data and using objects in the array to use in the page
           return (
             <div className="box" key={index}>
-              <div className="product">
-                <div className="img">
-                  <span className="discount">{product.discount}% Off</span>
-                  <img src={product.img} alt="" />
-                  <div className="product-like">
-                    <label>{count}</label> <br />
-                    <i className="fa-regular fa-heart" onClick={increment}></i>
-                  </div>
-                </div>
-                <div className="product-details">
-                  <Link to={`/all-products/${product.id}`}>
-                    <h3 className="truncate">{product.name}</h3>
-                  </Link>
-                  <div className="rate">
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                    <i className="fa fa-star"></i>
-                  </div>
-                  <div className="price">
-                    <h4>{product.price}.00</h4>
-                    <button
-                      aria-label="Add to cart"
-                      onClick={() => addToCart(product)}
-                    >
-                      <i className="fa fa-plus"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <div className="product">
+    <div className="img-container"> {/* Updated class name for clarity */}
+      <span className="discount">{product.discount}% Off</span>
+      <img
+        src={product.img}
+        alt={product.name}  
+        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+      />
+      <div className="product-like">
+        <label>{count}</label> <br />
+        <i className="fa-regular fa-heart" onClick={increment}></i>
+      </div>
+    </div>
+    <div className="product-details">
+      <Link to={`/all-products/${product.id}`}>
+        <h3 className="truncate">{product.name}</h3>
+      </Link>
+      <div className="rate">
+        <i className="fa fa-star"></i>
+        <i className="fa fa-star"></i>
+        <i className="fa fa-star"></i>
+        <i className="fa fa-star"></i>
+        <i className="fa fa-star"></i>
+      </div>
+      <div className="price">
+        <h4>${product.price}.00</h4>
+        <button
+          aria-label="Add to cart"
+          onClick={() => addToCart(product)}
+        >
+          <i className="fa fa-plus"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
           );
         })}
       </Slider>
