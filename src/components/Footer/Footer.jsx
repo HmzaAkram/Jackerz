@@ -36,32 +36,27 @@ const Footer = () => {
           <li>Privacy Policy</li>
         </ul>
       </div>
-      <div className="">
-        <h2>Contact Us</h2>
-        <ul>
-          <li>Majed calony, landhi ,karachi</li>
-          <li className="contact-info-flex">
-            Email :
-            <a
-              target="_blank"
-              href="mailto:ha8028377@gmail.com"
-              className="icon-flex phone-icon"
-            >
-              ha8028377@gmail.com
-            </a>
-          </li>
-          <li className="contact-info-flex">
-            Phone :{" "}
-            <a
-              target="_blank"
-              href="https://api.whatsapp.com/send?phone=8801317089432"
-              className="icon-flex phone-icon"
-            >
-              +923152123010
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div className="instagram-gallery">
+    <h2>Gallery</h2>
+    <div className="b-img">
+        <a href="#"><img src="/assets/flash-deals/1/1.jpg" className="img-fluid" alt="gallery 1" /></a>
+    </div>
+    <div className="b-img">
+        <a href="#"><img src="/assets/flash-deals/2/1.jpg" className="img-fluid" alt="gallery 2" /></a>
+    </div>
+    <div className="b-img">
+        <a href="#"><img src="/assets/flash-deals/3/1.jpg" className="img-fluid" alt="gallery 3" /></a>
+    </div>
+    <div className="b-img">
+        <a href="#"><img src="/assets/flash-deals/4/1.jpg" className="img-fluid" alt="gallery 4" /></a>
+    </div>
+    {/* <div className="b-img">
+        <a href="#"><img src="/assets/flash-deals/5/1.jpg" className="img-fluid" alt="gallery 5" /></a>
+    </div>
+    <div className="b-img">
+        <a href="#"><img src="/assets/flash-deals/6/1.jpg" className="img-fluid" alt="gallery 6" /></a>
+    </div> */}
+</div>
     </footer>
   );
 };

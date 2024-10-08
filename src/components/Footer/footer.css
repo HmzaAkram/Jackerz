@@ -39,6 +39,24 @@ footer li {
   cursor: pointer;
 }
 
-.icon-footer {
-  cursor: pointer;
+.instagram-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 10px; /* Adjust space between the images */
+}
+
+.b-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Make the div take full width */
+  padding-top: 100%; /* Aspect ratio trick to make it a square */
+}
+
+.b-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the whole square */
 }
