@@ -35,7 +35,7 @@ const allProductsData = {
     {
       id: 5,
       discount: 50,
-      img: "/assets/flash-deals/5/5.jpg",
+      img: "/assets/flash-deals/5/1.jpg",
       name: "Austin Distressed",
       price: 100,
       desc: "A sleek, durable cafe racer design, perfect for casual or semi-formal wear. Lightweight and comfortable for motorcycle enthusiasts or fashion-forward individuals.",
@@ -43,7 +43,7 @@ const allProductsData = {
     {
       id: 6,
       discount: 50,
-      img: "/assets/flash-deals/6/6.jpg",
+      img: "/assets/flash-deals/1/1.jpg",
       name: "Austin Maroon",
       price: 100,
       desc: "A sleek, durable cafe racer design, perfect for casual or semi-formal wear. Lightweight and comfortable for motorcycle enthusiasts or fashion-forward individuals.",

@@ -20,13 +20,13 @@ const Allproducts = ({ allProductsData, addToCart }) => {
                   <Link to={`/all-products/${product.id}`}>
                     <h5>Click here for more Info</h5>
                   </Link>
-                  <div className="rate">
+                  {/* <div className="rate">
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star"></i>
-                  </div>
+                  </div> */}
                   <div className="price">
                     <h4>{product.price}.00</h4>
                     <button
