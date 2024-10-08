@@ -9,7 +9,7 @@ const TopCategories = () => {
           <div className="heading d_flex">
             <div className="heading">
               <i className="fa fa-border-all"></i>
-              <h2>Top Categories</h2>
+              <h2>Top SALE's</h2>
             </div>
             {/* <div className="heading-right row">
             <span>View All</span>
