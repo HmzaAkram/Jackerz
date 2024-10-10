@@ -36,27 +36,22 @@ const Footer = () => {
           <li>Privacy Policy</li>
         </ul>
       </div>
-      <div className="instagram-gallery">
-    <h2>Gallery</h2>
-    <div className="b-img">
-        <a href="#"><img src="/assets/flash-deals/1/1.jpg" className="img-fluid" alt="gallery 1" /></a>
-    </div>
-    <div className="b-img">
-        <a href="#"><img src="/assets/flash-deals/2/1.jpg" className="img-fluid" alt="gallery 2" /></a>
-    </div>
-    <div className="b-img">
-        <a href="#"><img src="/assets/flash-deals/3/1.jpg" className="img-fluid" alt="gallery 3" /></a>
-    </div>
-    <div className="b-img">
-        <a href="#"><img src="/assets/flash-deals/4/1.jpg" className="img-fluid" alt="gallery 4" /></a>
-    </div>
-    {/* <div className="b-img">
-        <a href="#"><img src="/assets/flash-deals/5/1.jpg" className="img-fluid" alt="gallery 5" /></a>
-    </div>
-    <div className="b-img">
-        <a href="#"><img src="/assets/flash-deals/6/1.jpg" className="img-fluid" alt="gallery 6" /></a>
-    </div> */}
+      <div className="instagram-gallery" style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '10px' }}>
+  <h2>Gallery</h2>
+  <div className="b-img" style={{ position: 'relative', overflow: 'hidden', width: '100%', paddingTop: '100%' }}>
+    <a href="#"><img src="/assets/flash-deals/1/1.jpg" className="img-fluid" alt="gallery 1" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} /></a>
+  </div>
+  <div className="b-img" style={{ position: 'relative', overflow: 'hidden', width: '100%', paddingTop: '100%' }}>
+    <a href="#"><img src="/assets/flash-deals/2/1.jpg" className="img-fluid" alt="gallery 2" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} /></a>
+  </div>
+  <div className="b-img" style={{ position: 'relative', overflow: 'hidden', width: '100%', paddingTop: '100%' }}>
+    <a href="#"><img src="/assets/flash-deals/3/1.jpg" className="img-fluid" alt="gallery 3" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} /></a>
+  </div>
+  <div className="b-img" style={{ position: 'relative', overflow: 'hidden', width: '100%', paddingTop: '100%' }}>
+    <a href="#"><img src="/assets/flash-deals/4/1.jpg" className="img-fluid" alt="gallery 4" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' }} /></a>
+  </div>
 </div>
+
     </footer>
   );
 };
